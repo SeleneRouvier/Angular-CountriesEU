@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>COUNTRIES FROM EUROPE</h1>
+    <hr>
+   <div class="paises">
+        <div 
+            class="pais" 
+            *ngFor="let pais of paises"
+        >
+            <img [src]="pais.flag" alt="">
+            <h5> {{ pais.name }}</h5>
+            <p> {{ pais.capital }}</p>
+        </div>
+    </div> 
+</div>
